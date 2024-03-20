@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.heading
+{
+    background-color: #CCFFFF; 
+    font-size:60px; 
+    border-style:groove;
+    background: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2019/03/best-freelance-websites-3.webp) no-repeat center center/cover;
+}
+.options
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    height: 80px; 
+    font-size:x-large; 
+    text-decoration:none; 
+    border-bottom-style: groove
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.hero-section {
+    background-color: #f1f5f8;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.footer p {
+    margin: 10px 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
