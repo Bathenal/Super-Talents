@@ -97,22 +97,32 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('employerFormData', JSON.stringify(formData));
     }
 });
-// Employer Login
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('employerLoginForm');
-    const usernameInput = document.querySelector('input[name="ename"]');
-    const passwordInput = document.querySelector('input[name="epassword"]');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const storedData = JSON.parse(localStorage.getItem('employerFormData'));
-        window,location.href =`http://127.0.0.1:5500/employerHome.html`
-        if (storedData && storedData.username === usernameInput.value && storedData.password === passwordInput.value) {
-            alert('Login successful!');
-            // Redirect to employer homepage or perform other actions
-        } else {
-            alert('Invalid username or password.');
+// Freelancer Login
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("employerLoginForm");
+    const usernameInput = document.querySelector('input[name="fname"]');
+    const passwordInput = document.querySelector('input[name="fpassword"]');
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      const storedData = JSON.parse(localStorage.getItem("employerFormData"));
+      if (
+        storedData &&
+        storedData.username === usernameInput.value &&
+        storedData.password === passwordInput.value
+      ) {
+        alert("Login successful!");
+        // Function to login and redirect to index page
+        function login() {
+          // Redirect to the index page
+          window.location.href = "employerHome.html";
         }
-    });
+  
+        // Call the logout function when the page loads
+        window.onload = login;
+      } else {
+        alert("Invalid username or password.");
+      }
+      });
 });

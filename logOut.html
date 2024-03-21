@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Logout Page</title>
-  </head>
-  <body>
-    <!-- <% -->
-    session.invalidate(); response.sendRedirect("index.html");
-    <!-- %> -->
-  </body>
-  <footer class="footer">
-    <div class="container">
-        <p>&copy; 2024 Super Talents Projects Portal. All rights reserved.</p>
-        <p>Designed by <a href="#" target="_blank">Bathenal Boaz</a></p>
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout Page</title>
+</head>
+<body>
+  <script>
+    // Function to logout and redirect to index page
+    function logout() {
+      // Perform any additional logout actions if needed
+      // For example, clearing local storage, session data, etc.
+      
+      // Redirect to the index page
+      window.location.href = "index.html";
+    }
+
+    // Call the logout function when the page loads
+    window.onload = logout;
+  </script>
+</body>
+<footer class="footer">
+  <div class="container">
+      <p>&copy; 2024 Super Talents Projects Portal. All rights reserved.</p>
+      <p>Designed by <a href="#" target="_blank">Bathenal Boaz</a></p>
+  </div>
 </footer>
-
-  <script src="js/script.js"></script>
-
 </html>

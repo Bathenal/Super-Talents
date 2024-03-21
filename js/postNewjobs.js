@@ -22,25 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
         xhr.open('POST', 'your-server-endpoint-url', true); // Replace 'your-server-endpoint-url' with the actual URL
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    //     xhr.onreadystatechange = function () {
-    //         if (xhr.readyState === XMLHttpRequest.DONE) {
-    //             if (xhr.status === 200) {
-    //                 // Request was successful, handle the response if needed
-    //                 console.log(xhr.responseText);
-    //                 alert('Job posted successfully!');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // Request was successful, handle the response if needed
+                    console.log(xhr.responseText);
+                    alert('Job posted successfully!');
 
-    //                 // Update the posted jobs page dynamically
-    //                 updatePostedJobs(category, details);
-    //             } else {
-    //                 // Request failed, handle the error
-    //                 console.error('Error:', xhr.status);
-    //                 alert('Failed to post job. Please try again later.');
-    //             }
-    //         }
-    //     };
+                    // Update the posted jobs page dynamically
+                    updatePostedJobs(category, details);
+                } else {
+                    // Request failed, handle the error
+                    console.error('Error:', xhr.status);
+                    alert('Failed to post job. Please try again later.');
+                }
+            }
+        };
 
-    //     xhr.send(formData);
-    // });
+        xhr.send(formData);
+    });
 
     // Function to update the posted jobs page with the newly added project
     function updatePostedJobs(category, details) {
@@ -50,5 +50,3 @@ document.addEventListener('DOMContentLoaded', function () {
         postedJobsList.appendChild(newProjectItem);
     }
 });
-
-
