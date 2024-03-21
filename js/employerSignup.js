@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         const storedData = JSON.parse(localStorage.getItem('employerFormData'));
+        window,location.href =`http://127.0.0.1:5500/employerHome.html`
         if (storedData && storedData.username === usernameInput.value && storedData.password === passwordInput.value) {
             alert('Login successful!');
             // Redirect to employer homepage or perform other actions
