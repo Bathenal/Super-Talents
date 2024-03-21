@@ -1,0 +1,192 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    background-color: #CCFFFF; 
+    font-size:60px; 
+    border-style:groove;
+    background: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2019/03/best-freelance-websites-3.webp) no-repeat center center/cover;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .options {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .options a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .options a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Feature section styles */
+  .feature-section {
+    margin-bottom: 50px;
+  }
+  
+  .feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    width: 48%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Product section styles */
+  .product-section {
+    margin-bottom: 50px;
+  }
+  
+  .product-container {
+    display: block;
+    align-items: center;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+  
+  .product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details p {
+    font-size: 16px;
+    color: #666;
+  }
+  button{
+    background-color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: large;
+
+
+  }
+  
+  /* Quick links styles */
+  .quick-links {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .quick-links button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .links a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .feature {
+      width: 100%;
+    }
+  
+    .product-container {
+      flex-direction: column;
+    }
+  
+    .product-details {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+    

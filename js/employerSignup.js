@@ -1,3 +1,4 @@
+// Employer Signup
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('signupForm');
     const usernameInput = document.querySelector('input[name="ename"]');
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         if (validateForm()) {
-            saveFormData();
+            saveEmployerFormData();
             form.submit();
         }
     });
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return city.trim() !== '';
     }
 
-    function saveFormData() {
+    function saveEmployerFormData() {
         const formData = {
             username: usernameInput.value,
             companyName: companyNameInput.value,
@@ -95,4 +96,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         localStorage.setItem('employerFormData', JSON.stringify(formData));
     }
+});
+// Employer Login
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('employerLoginForm');
+    const usernameInput = document.querySelector('input[name="ename"]');
+    const passwordInput = document.querySelector('input[name="epassword"]');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const storedData = JSON.parse(localStorage.getItem('employerFormData'));
+        if (storedData && storedData.username === usernameInput.value && storedData.password === passwordInput.value) {
+            alert('Login successful!');
+            // Redirect to employer homepage or perform other actions
+        } else {
+            alert('Invalid username or password.');
+        }
+    });
 });

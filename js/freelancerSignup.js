@@ -1,3 +1,4 @@
+// Freelancer Signup
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('signupForm');
     const usernameInput = document.getElementById('fname');
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         if (validateForm()) {
-            saveFormData();
+            saveFreelancerFormData();
             form.submit();
         }
     });
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return city.trim() !== '';
     }
 
-    function saveFormData() {
+    function saveFreelancerFormData() {
         const formData = {
             username: usernameInput.value,
             fullName: fullNameInput.value,
@@ -107,4 +108,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         localStorage.setItem('freelancerFormData', JSON.stringify(formData));
     }
+});
+// Freelancer Login
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('freelancerLoginForm');
+    const usernameInput = document.querySelector('input[name="fname"]');
+    const passwordInput = document.querySelector('input[name="fpassword"]');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const storedData = JSON.parse(localStorage.getItem('freelancerFormData'));
+        if (storedData && storedData.username === usernameInput.value && storedData.password === passwordInput.value) {
+            alert('Login successful!');
+            // Redirect to freelancer homepage or perform other actions
+        } else {
+            alert('Invalid username or password.');
+        }
+    });
 });

@@ -1,3 +1,50 @@
+.heading{
+    background-color: #CCFFFF; 
+    font-size:60px; 
+    border-style:groove;
+    background: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2019/03/best-freelance-websites-3.webp) no-repeat center center/cover;
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .options {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .options a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .options a:hover {
+    background-color: #ddd;
+  }
+.apply-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+}
+
+.job-list li {
+    margin-bottom: 10px;
+}
+
 .footer {
     background-color: #343a40;
     color: #fff;
