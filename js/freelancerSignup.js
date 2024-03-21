@@ -109,32 +109,35 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("freelancerFormData", JSON.stringify(formData));
   }
 });
-// Freelancer Login
+// Freelancer Signup
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("freelancerLoginForm");
-  const usernameInput = document.querySelector('input[name="fname"]');
-  const passwordInput = document.querySelector('input[name="fpassword"]');
+  const form = document.getElementById("signupForm");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const storedData = JSON.parse(localStorage.getItem("freelancerFormData"));
-    if (
-      storedData &&
-      storedData.username === usernameInput.value &&
-      storedData.password === passwordInput.value
-    ) {
-      alert("Login successful!");
-      // Function to login and redirect to index page
-      function login() {
-        // Redirect to the index page
-        window.location.href = "freelancerHome.html";
-      }
+    // Save form data to localStorage
+    saveFormData();
 
-      // Call the logout function when the page loads
-      window.onload = login;
-    } else {
-      alert("Invalid username or password.");
-    }
+    // Redirect to the login page
+    window.location.href = "login.html";
   });
+
+  function saveFormData() {
+    const formData = {
+      username: document.getElementById("fname").value,
+      fullName: document.getElementById("fullname").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("fpassword").value,
+      age: document.getElementById("age").value,
+      phoneNumber: document.getElementById("phone").value,
+      city: document.getElementById("city").value,
+    };
+
+    localStorage.setItem("freelancerFormData", JSON.stringify(formData));
+  }
 });
+
+// function redirectToLogin() {
+//     window.location.href = "login.html";
+//   }

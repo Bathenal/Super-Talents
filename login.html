@@ -1,92 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Login Page</title>
-  <img src="images/icon.jpeg" alt="fav-icon" width="50px">
-</head>
-<body>
-  <div class="heading">
-    <h1>Super Talents Projects Portal</h1>
-  </div>
-  <div class="options">
-    <br /><a href="index.html">Home</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="browseCategories.html">Browse Project Categories</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="aboutUs.html">About us</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="contactUs.html">Contact us</a>
-  </div>
-  <div style="height: 500px; width: 49.9%; float: left; background-color: #ffffcc; border-right-style: groove;">
-    <br /><span style="font-size: 35px">Are you an <b>Employer</b>?</span>
-    <br /><br />
-    <span style="font-size: 20px"
-      >Super Talent is the best freelance platform in the world to find & Hire talented
-      and skilled freelancers to help you with your projects.</span
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login Page</title>
+    <img src="images/icon.jpeg" alt="fav-icon" width="50px" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Super Talents Projects Portal</h1>
+    </div>
+    <div class="options">
+      <br /><a href="index.html">Home</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="browseCategories.html">Browse Project Categories</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="aboutUs.html">About us</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="contactUs.html">Contact us</a>
+    </div>
+    <div
+      style="
+        height: 500px;
+        width: 49.9%;
+        float: left;
+        background-color: #ffffcc;
+        border-right-style: groove;
+      "
     >
-    <br /><br /><br />
-    <span style="font-size: 25px"
-      >To become a Member
-      <a href="employerSignup.html"><button>Sign Up</button></a>
+      <br /><span style="font-size: 35px">Are you an <b>Employer</b>?</span>
+      <br /><br />
+      <span style="font-size: 20px"
+        >Super Talent is the best freelance platform in the world to find & Hire
+        talented and skilled freelancers to help you with your projects.</span
+      >
       <br /><br /><br />
-      <b>Employer Login</b>
-      <div style="font-size: 20px;">
-        <div id="employerLoginForm">
-          <span>Email :</span>
-          <input type="text" name="ename" placeholder="Enter Username Here" />
+      <span style="font-size: 25px"
+        >To become a Member
+        <a href="employerSignup.html"><button>Sign Up</button></a>
+        <br /><br /><br />
+        <b>Employer Login</b>
+        <div style="font-size: 20px">
+          <div id="employerLoginForm">
+            <span>Email :</span>
+            <input type="text" name="ename" placeholder="Enter Username Here" />
+          </div>
+          <div>
+            <span>Password:</span>
+            <input
+              type="password"
+              name="epassword"
+              placeholder="Enter Password Here"
+            />
+          </div>
+          <div>
+            <input type="reset" id="employer-reset-btn" value="Clear" />
+            <input type="submit" id="employer-login-btn" value="Login" />
+          </div>
         </div>
-        <div>
-          <span>Password:</span>
-          <input type="password" name="epassword" placeholder="Enter Password Here" />
-        </div>
-        <div>
-          <input type="reset" value="Clear" />
-          <input type="submit" id="employer-login-btn" value="Login" />
-        </div>
-      </div>
-    </span>
-  </div>
-  <div style="height: 500px; width: 49.9%; float: left; background-color: #ccffcc;">
-    <br /><span style="font-size: 35px">Are you a <b>Freelancer</b>?</span>
-    <br /><br /><br />
-    <span style="font-size: 20px"
-      >Super Talents provides a great platform to freelancers to showcase their
-      skills!</span
+      </span>
+    </div>
+    <div
+      style="
+        height: 500px;
+        width: 49.9%;
+        float: left;
+        background-color: #ccffcc;
+      "
     >
-    <br /><br /><br />
-    <span style="font-size: 25px"
-      >To become a Member
-      <a href="freelancerSignup.html"><button>Sign Up</button></a>
+      <br /><span style="font-size: 35px">Are you a <b>Freelancer</b>?</span>
       <br /><br /><br />
-      <b>Freelancer Login</b>
-      <div style="font-size: 20px;" id="freelancerLoginForm">
-        <div>
-          <span>Username:</span>
-          <input type="text" name="fname" placeholder="Enter Username Here" />
+      <span style="font-size: 20px"
+        >Super Talents provides a great platform to freelancers to showcase
+        their skills!</span
+      >
+      <br /><br /><br />
+      <span
+        style="
+          font-family: Kanit, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        "
+        >To become a Member
+        <a href="freelancerSignup.html"><button>Sign Up</button></a>
+        <br /><br /><br />
+        <b>Freelancer Login</b>
+        <div style="font-size: 20px" id="freelancerLoginForm">
+          <div>
+            <span>Username:</span>
+            <input type="text" name="fname" placeholder="Enter Username Here" />
+          </div>
+          <div>
+            <span>Password:</span>
+            <input
+              type="password"
+              name="fpassword"
+              placeholder="Enter Password Here"
+            />
+          </div>
+          <div>
+            <input type="reset" id="freelancer-reset-btn" value="Clear" />
+            <input type="submit" id="freelancer-login-btn" value="Login" />
+          </div>
         </div>
-        <div>
-          <span>Password:</span>
-          <input type="password" name="fpassword" placeholder="Enter Password Here" />
-        </div>
-        <div>
-          <input type="reset" value="Clear" />
-          <input type="submit" id="freelancer-login-btn" value="Login" />
-        </div>
-      </div>
-    </span>
-  </div>
-      
-  <footer class="footer">
-    <div class="container">
+      </span>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
         <p>&copy; 2024 Super Talents Projects Portal. All rights reserved.</p>
         <p>Designed by <a href="#" target="_blank">Bathenal Boaz</a></p>
         <div class="social-icons">
-          <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
-          <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a>
-          <a href="#" target="_blank"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+          <a href="#" target="_blank"
+            ><img src="images/facebook.png" alt="Facebook" width="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="images/twitter.png" alt="Twitter" width="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="images/instagram.png" alt="Instagram" width="50px"
+          /></a>
         </div>
         <div class="footer-links">
           <a href="index.html">Home</a>
@@ -96,13 +130,9 @@
           <a href="terms.html">Terms of Service</a>
           <a href="privacy.html">Privacy Policy</a>
         </div>
-    
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-  
-  <script src="js/login.js">
-  </script>
-</body>
+    <script src="js/login.js"></script>
+  </body>
 </html>

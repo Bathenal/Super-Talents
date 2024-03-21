@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="css/freelancerSignup.css" />
-  <title>Freelancer Signup</title>
-</head>
-<body>
-  
-  <div class="heading">
-    <h1>Super Talents Projects Portal</h1>
-  </div>
-  <div class="options">
-    <br /><a href="index.html">Home</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="browseCategories.html">Browse Project Categories</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="aboutUs.html">About us</a
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="contactUs.html">Contact us</a>
-  </div>
-  <h1>Hello Freelancer!</h1>
-  <p></p>
-  <span style="font-size: 20px">Enter Details:</span>
-  <form action="login.html" method="post" id="signupForm" class="freelance-signup">
-    <div>
-      <label for="fname"><b>Username:</b></label>
-      <input type="text" name="fname" id="fname" placeholder="Enter Username Here" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/freelancerSignup.css" />
+    <title>Freelancer Signup</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Super Talents Projects Portal</h1>
     </div>
-    <div>
-      <label for="fullname"><b>Full Name:</b></label>
-      <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name Here" />
+    <div class="options">
+      <br /><a href="index.html">Home</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="browseCategories.html">Browse Project Categories</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="aboutUs.html">About us</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="contactUs.html">Contact us</a>
     </div>
-    <div>
-      <label for="email"><b>Email:</b></label>
-      <input type="text" name="email" id="email" placeholder="Enter Email Here" />
-    </div>
-    <div>
-      <label for="fpassword"><b>Password:</b></label>
-      <input type="password" name="fpassword" id="fpassword" placeholder="Enter Password Here" />
-    </div>
-    <div>
-      <label for="cpassword"><b>Confirm Password:</b></label>
-      <input type="password" name="cpassword" id="cpassword" placeholder="Re-enter Password Here" />
-    </div>
-    <div>
-      <label for="age"><b>Age:</b></label>
-      <input type="number" name="age" id="age" placeholder="Enter Age Here" />
-    </div>
-    <div>
-      <label for="phone"><b>Phone Number:</b></label>
-      <input type="text" name="phone" id="phone" placeholder="Enter Number Here" />
-    </div>
-    <div>
-      <label for="city"><b>City:</b></label>
-      <input type="text" name="city" id="city" placeholder="Enter City Here" />
-    </div>
-    <div>
-      <input type="reset" />
-      <input type="submit" value="Sign Up" />
-    </div>
-  </form>
-  <br /><br />
-  <p>
-    <b>Note:</b> 1.Make sure your 'Password' and 'Confirm Password' fields contain the same value.<br />
-    2.Your username should be unique.<br />
-    <b>Failure of the above statements will lead to signup failure.</b>
-  </p>
-  <br /><br />
-  <h3>
-    Already a Registered Freelancer?...
-    <a href="index.html">Click here to Login</a>
-  </h3>
-  <footer class="footer">
-    <div class="container">
+    <h1>Hello Freelancer!</h1>
+    <p></p>
+    <span style="font-size: 20px">Enter Details:</span>
+    <form
+      action="login.html"
+      method="post"
+      id="signupForm"
+      class="freelance-signup"
+    >
+      <div>
+        <label for="fname"><b>Username:</b></label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Enter Username Here"
+        />
+      </div>
+      <div>
+        <label for="fullname"><b>Full Name:</b></label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Enter Full Name Here"
+        />
+      </div>
+      <div>
+        <label for="email"><b>Email:</b></label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter Email Here"
+        />
+      </div>
+      <div>
+        <label for="fpassword"><b>Password:</b></label>
+        <input
+          type="password"
+          name="fpassword"
+          id="fpassword"
+          placeholder="Enter Password Here"
+        />
+      </div>
+      <div>
+        <label for="cpassword"><b>Confirm Password:</b></label>
+        <input
+          type="password"
+          name="cpassword"
+          id="cpassword"
+          placeholder="Re-enter Password Here"
+        />
+      </div>
+      <div>
+        <label for="age"><b>Age:</b></label>
+        <input type="number" name="age" id="age" placeholder="Enter Age Here" />
+      </div>
+      <div>
+        <label for="phone"><b>Phone Number:</b></label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Enter Number Here"
+        />
+      </div>
+      <div>
+        <label for="city"><b>City:</b></label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Enter City Here"
+        />
+      </div>
+      <div>
+        <input type="reset" id="freelancer-reset-btn" />
+        <input
+          type="submit"
+          value="Sign Up"
+          onclick="redirectToLogin()"
+          id="freelancer-login-btn"
+        />
+      </div>
+    </form>
+    <br /><br />
+    <p>
+      <b>Note:</b> 1.Make sure your 'Password' and 'Confirm Password' fields
+      contain the same value.<br />
+      2.Your username should be unique.<br />
+      <b>Failure of the above statements will lead to signup failure.</b>
+    </p>
+    <br /><br />
+    <h3>
+      Already a Registered Freelancer?...
+      <a href="index.html">Click here to Login</a>
+    </h3>
+    <footer class="footer">
+      <div class="container">
         <p>&copy; 2024 Super Talents Projects Portal. All rights reserved.</p>
         <p>Designed by <a href="#" target="_blank">Bathenal Boaz</a></p>
         <div class="social-icons">
-          <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
-          <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a>
-          <a href="#" target="_blank"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+          <a href="#" target="_blank"
+            ><img src="images/facebook.png" alt="Facebook" width="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="images/twitter.png" alt="Twitter" width="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img src="images/instagram.png" alt="Instagram" width="50px"
+          /></a>
         </div>
         <div class="footer-links">
           <a href="index.html">Home</a>
@@ -88,11 +139,9 @@
           <a href="terms.html">Terms of Service</a>
           <a href="privacy.html">Privacy Policy</a>
         </div>
-    
-    </div>
-</footer>
+      </div>
+    </footer>
 
-  <script src="js/freelancerSignup.js"></script>
-
-</body>
+    <script src="js/freelancerSignup.js"></script>
+  </body>
 </html>

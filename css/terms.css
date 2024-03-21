@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body{
     background-color: light indigo;
     border-radius: 50%;

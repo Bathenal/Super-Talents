@@ -1,8 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 body{
     background-color: light indigo;
     border-radius: 50%;
@@ -10,7 +25,6 @@ body{
     align-items: center;
     text-align: center;
     margin-top: 3px;
-    background: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2019/03/best-freelance-websites-3.webp) no-repeat center center/cover;
 
 
 }
@@ -29,6 +43,28 @@ form{
     background-color:#CCFFCC;
     
 }
+
+#freelancer-reset-btn{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+#freelancer-login-btn{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#freelancer-login-btn:hover {
+    background-color: #0056b3;
+}
+
+
 .footer {
     background-color: #343a40;
     color: #fff;
