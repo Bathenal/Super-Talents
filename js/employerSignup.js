@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     saveFormData();
 
     // Redirect to the login page
-    window.location.href = "login.html"; // Change to the correct login page URL
+    window.location.href = "login.html"; 
   });
 });
 // document.addEventListener("DOMContentLoaded", function () {

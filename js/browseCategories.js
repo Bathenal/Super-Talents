@@ -10,17 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function fetchProjectsByCategory(category) {
-    // Simulate fetching projects data from an API
-    // In a real application, you would make an actual API request
+
     const projectsData = [
-      // { id: 1, title: 'Web Development Project 1' },
-      // { id: 2, title: 'Web Development Project 2' },
-      // { id: 3, title: 'Web Development Project 3' },
-      // { id: 4, title: 'Web Development Project 4' },
-      // { id: 5, title: 'Web Development Project 5' },
+      { id: 1, title: 'Web Development Project 1' },
+      { id: 2, title: 'Web Development Project 2' },
+      { id: 3, title: 'Web Development Project 3' },
+      { id: 4, title: 'Web Development Project 4' },
+      { id: 5, title: 'Web Development Project 5' },
     ];
 
-    // Render projects in the projects container
     renderProjects(projectsData);
   }
 

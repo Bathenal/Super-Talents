@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (paymentDetails) {
       // Add logic to process the payment details, such as sending data to the server or updating UI
       console.log("Payment Details:", paymentDetails);
-      // You can add more logic here, such as AJAX requests or updating UI elements
     } else {
       alert("Please fill in payment details.");
     }
